@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="jumbotron text-center">
+  <h2 id="title">{{#link-to 'application'}}The Reading Project{{/link-to}}</h2>
+  {{#link-to 'books'}} <button class="btn btn-primary">List all books</button> {{/link-to}}
+  {{#link-to 'books.new'}} <button class="btn btn-primary">Add new book</button> {{/link-to}}
+</div>
 
 {{outlet}}

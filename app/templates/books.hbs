@@ -1,0 +1,14 @@
+<div class="col-md-6 col-md-offset-3">
+  {{outlet}}
+  <section>
+    <h2>Book List</h2>
+    {{#each model as |book|}}
+    <p>
+      <span><strong>{{book.title}}</strong> - <em>{{book.author}}</em> - {{book.pages}}</span>
+      <button class="btn btn-danger btn-xs" {{action "deleteBook" book}}>Delete</button>
+    </p>
+    {{else}}
+    No books yet. You can {{#link-to 'books.new'}} add {{/link-to}}the first one.
+    {{/each}}
+  </section>
+</div>
