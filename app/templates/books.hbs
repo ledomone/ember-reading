@@ -1,7 +1,7 @@
 <div class="col-md-6 col-md-offset-3">
   {{outlet}}
   <section>
-    <h2>Book List [{{model.length}}]</h2>
+    <h2>Book List</h2>
     {{#each model as |book|}}
     <p>
       <span><strong>{{book.title}}</strong> - <em>{{book.author}}</em> - {{book.pages}}</span>
