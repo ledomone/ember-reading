@@ -10,7 +10,7 @@
   </div>
   <div class="form-group">
     <label for="pagesInput">Pages</label>
-    {{input value=pages placeholder="Number of pages" class="form-control" id="pagesInput"}}
+    {{input type="number" min="0" value=pages placeholder="Number of pages" class="form-control" id="pagesInput"}}
   </div>
   <button {{action "saveBook"}} class="btn btn-default">Save</button>
 </form>
