@@ -7,6 +7,6 @@ export default Ember.Component.extend({
   }),
   sumPages: Ember.computed.sum('bookPages'),
   avgPages: Ember.computed('sumPages', 'booksCount', function() {
-    return this.get('sumPages') / this.get('booksCount');
+    return Math.floor(this.get('sumPages') / this.get('booksCount'));
   })
 });
